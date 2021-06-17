@@ -7,9 +7,16 @@ export default class App extends React.Component {
 
 
     render() {
+        
         return (
+            
             	      <div>
-            	        {this.state.peopleInSpace.map(person => person.name)}
+            	        {this.state.peopleInSpace.map(person => 
+                        <ul>
+                            <li>{person.name}</li>
+                            </ul>
+                            
+                            )}
             	      </div>
             	    )
         
